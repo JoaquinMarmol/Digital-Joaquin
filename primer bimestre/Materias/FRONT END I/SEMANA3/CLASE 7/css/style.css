@@ -1,0 +1,20 @@
+head{background-color: #E6E6E6;}
+img#logobatman{
+    margin: auto;
+    display: block;
+}
+h1{text-align: center;}
+h1{color: #005677;}
+h1 {background-color: #C4C4C4;}
+h2{color: #005677;}
+h2{background-color: #C4C4C4;}
+
+p#parrafo{color: white;
+}
+#footer {color: white;background-color: #005677; text-align: center;}
+
+b{
+    font-style: italic;
+}
+
+
