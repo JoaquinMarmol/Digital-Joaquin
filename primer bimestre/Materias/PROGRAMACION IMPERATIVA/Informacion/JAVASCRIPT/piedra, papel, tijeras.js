@@ -1,4 +1,4 @@
-var piedrasPapelTijeras = {
+let piedrasPapelTijeras = {
     // Marcador del juego
     puntoMaquina: 0,
     puntoUsuario: 0,
