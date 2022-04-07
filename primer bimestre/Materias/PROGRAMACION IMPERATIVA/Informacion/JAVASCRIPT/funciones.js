@@ -10,7 +10,7 @@ function miFuncion() { // function declaration Declarativas expresión
 
 miFuncion(); // mandamos llamar la funcion
 
-var miFuncion = function(a,b) {  // function Expression (también conocidas como funciones anónimas)
+let miFuncion = function(a,b) {  // function Expression (también conocidas como funciones anónimas)
     return a + b;
 }
 

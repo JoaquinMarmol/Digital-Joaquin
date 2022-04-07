@@ -20,4 +20,4 @@
  // Tipos de objetos o no primitivos
 
  [1, 2, 3, 4] // corchetes // arrays
- { nombre: 'Diego' }  // llaves // objetos
+ { nombre: 'Joaquin' }  // llaves // objetos

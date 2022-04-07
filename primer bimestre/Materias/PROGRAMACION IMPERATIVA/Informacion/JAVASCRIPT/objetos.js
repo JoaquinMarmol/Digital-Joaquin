@@ -11,10 +11,7 @@ let miAuto = {
 }
 };
 
-miAuto.annio 
-miAuto.modelo 
-
-miAuto.detallesDelAuto(); 
+console.log (miAuto.detallesDelAuto()); 
 
 
 

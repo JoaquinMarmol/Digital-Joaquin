@@ -39,7 +39,7 @@ switch (dia) {
     	console.log('buena semana');
 		break;
 
-	 default:
+	default:
     	console.log('buen dia');
 		break;
 	

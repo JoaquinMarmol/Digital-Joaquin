@@ -4,7 +4,7 @@ function auto (MARCA, MODELO, ANNIO){
     this.modelo = MODELO;
     this.annio = ANNIO;
   }
-  var autos = [];
+  let autos = [];
   for(let i = 0 ; i < 3 ; i++){
     let marca = prompt("Ingresa la marca del auto");
     let modelo = prompt("Ingresa el modelo del auto");

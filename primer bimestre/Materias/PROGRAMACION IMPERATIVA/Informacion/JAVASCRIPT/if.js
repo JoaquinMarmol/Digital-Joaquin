@@ -9,7 +9,7 @@ if(esUsuario) {  // con el if validamos que la condición sea true
 
 // Presentamos el else 
 
-var esUsuario = false; 
+let esUsuario = false; 
 
 if(esUsuario) {
     console.log('Tiene acceso al contenido'); 
@@ -19,8 +19,8 @@ if(esUsuario) {
 
 // Ejemplo de cómo haríamos una validación
 
-var edad = 18; 
-var accion; 
+let edad = 18; 
+let accion; 
 
 if(edad >= 18) {
     accion = 'Puede votar'
@@ -32,8 +32,8 @@ console.log(accion);
 
 // Ejemplo de cómo utilizaremos el else if
 
-var edad = 18; 
-var accion;  
+let edad = 18; 
+let accion;  
 
 if(edad === 18) {
     accion = 'Puede votar, será su 1ra votación'
