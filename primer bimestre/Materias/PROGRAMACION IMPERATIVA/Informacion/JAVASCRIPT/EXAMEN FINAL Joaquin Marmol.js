@@ -116,9 +116,20 @@ for (let i = 0; i< 3; i++){
 }
 console.log ("la suma de las diagonales es:", sumaDiagonal);
 
-//C. Crear una función que retorne la suma de todos los números dentro de la matriz que sean pares.
+//C. Crear una función que retorne la suma de todos los números dentro
+//de la matriz que sean pares.
 
-
+function sumarPares(){
+    let total = 0;
+    for(let i=0; i < matriz.lenght; i++){
+        for (let j=0; j < matriz[i].length; j++){
+        if (p%2 === 0)
+        return total= matriz[i][j]; 
+        }
+        console.log(total)
+    }
+}
+    sumarPares();
 //D. Crear una función que retorne la suma de todos los valores de la matriz.
 
 function sumar() {

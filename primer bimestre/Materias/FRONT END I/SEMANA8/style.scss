@@ -19,7 +19,6 @@ main{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         grid-gap: 10px;
-        grid-column-start: 1fr;
         justify-content: center;
         align-items: center;
         padding-bottom: 3rem;
@@ -89,11 +88,7 @@ footer{
 }
 
 @media (min-width: 768px){
-
-    
-
     main .fotosperfiles img.escritorio{
                 display:block;
             }
-    }
- 
+}

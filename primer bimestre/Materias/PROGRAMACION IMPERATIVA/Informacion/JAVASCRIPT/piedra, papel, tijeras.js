@@ -81,7 +81,7 @@ let piedrasPapelTijeras = {
     },
     // Resultados
     resultados: function () {
-      this.puntoMaquina == 10 ? console.log("Lo siento la Maquina ha ganado :(") : console.log("¡Felicidades eres el campeón del juego!");
+      this.puntoMaquina == 10 ? console.log("Lo siento la Maquina te ha destrozado :(") : console.log("¡Felicidades eres el campeón del juego!");
     }
   }
   
