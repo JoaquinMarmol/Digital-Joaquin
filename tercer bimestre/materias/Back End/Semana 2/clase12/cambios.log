@@ -1,0 +1,99 @@
+
+[2022-08-12 15:11:35] [ ERROR] [Main:80] Metodo permitido unicamente en un query. Use execute ó executeUpdate en lugar de executeQuery
+Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+DELETE FROM EMPLEADOS WHERE ID=3 [90002-214]
+[2022-08-12 15:12:16] [ ERROR] [Main:80] No hay datos disponibles.
+No data is available [2000-214]
+[2022-08-12 15:13:17] [ ERROR] [Main:82] No hay datos disponibles.
+No data is available [2000-214]
+[2022-08-12 15:13:50] [ ERROR] [Main:82] Metodo permitido unicamente en un query. Use execute ó executeUpdate en lugar de executeQuery
+Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+INSERT INTO EMPLEADOS (ID,PRIMER_NOMBRE,APELLIDO,EDAD, EMAIL) VALUES (3,'Pablo','Martini',67, 'PABLOMARTINI@GMAIL.COM') [90002-214]
+[2022-08-12 15:14:40] [ ERROR] [Main:82] Metodo permitido unicamente en un query. Use execute ó executeUpdate en lugar de executeQuery
+Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+INSERT INTO EMPLEADOS (ID,PRIMER_NOMBRE,APELLIDO,EDAD, EMAIL) VALUES (3,'Pablo','Martini',67, 'PABLOMARTINI@GMAIL.COM') [90002-214]
+[2022-08-12 15:16:32] [ ERROR] [Main:82] Metodo permitido unicamente en un query. Use execute ó executeUpdate en lugar de executeQuery
+Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+INSERT INTO EMPLEADOS (ID,PRIMER_NOMBRE,APELLIDO,EDAD, EMAIL) VALUES (3,'Pablo','Martini',67, 'PABLOMARTINI@GMAIL.COM') [90002-214]
+[2022-08-12 15:19:13] [ ERROR] [Main:84] Metodo permitido unicamente en un query. Use execute ó executeUpdate en lugar de executeQuery
+Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+INSERT INTO EMPLEADOS (ID,PRIMER_NOMBRE,APELLIDO,EDAD, EMAIL) VALUES (3,'Pablo','Martini',67, 'PABLOMARTINI@GMAIL.COM') [90002-214]
+[2022-08-12 15:20:27] [ DEBUG] [Main:76] Se actualizo la información del empleado: 
+ID: 2
+Nombre: Pedro
+Apellido: López
+Edad: 45
+Email: PEDROLOPEZ@GMAIL.COM
+[2022-08-12 15:20:27] [ DEBUG] [Main:76] Se actualizo la información del empleado: 
+ID: 4
+Nombre: Pablo
+Apellido: Del Litto
+Edad: 21
+Email: PABLODELLITTO@GMAIL.COM
+[2022-08-12 15:20:27] [ DEBUG] [Main:76] Se actualizo la información del empleado: 
+ID: 5
+Nombre: Nachoo
+Apellido: MOSCA
+Edad: 19
+Email: NACHOMOSCARDO@GMAIL.COM
+[2022-08-12 15:25:45] [ DEBUG] [Main:76] Se actualizo la información del empleado: 
+ID: 2
+Nombre: Pedro
+Apellido: López
+Edad: 45
+Email: PEDROLOPEZ@GMAIL.COM
+[2022-08-12 15:25:45] [ DEBUG] [Main:76] Se actualizo la información del empleado: 
+ID: 4
+Nombre: Pablo
+Apellido: Del Litto
+Edad: 21
+Email: PABLODELLITTO@GMAIL.COM
+[2022-08-12 15:25:45] [ DEBUG] [Main:76] Se actualizo la información del empleado: 
+ID: 5
+Nombre: Nachoo
+Apellido: MOSCA
+Edad: 19
+Email: NACHOMOSCARDO@GMAIL.COM
+[2022-08-12 15:25:45] [ INFO ] [Main:80] Se elimino el empleado con esta informacion: INSERT INTO EMPLEADOS (ID,PRIMER_NOMBRE,APELLIDO,EDAD, EMAIL) VALUES (3,'Pablo','Martini',67, 'PABLOMARTINI@GMAIL.COM')
+[2022-08-12 15:27:45] [ DEBUG] [Main:76] Se actualizo la información del empleado: 
+ID: 2
+Nombre: Pedro
+Apellido: López
+Edad: 45
+Email: PEDROLOPEZ@GMAIL.COM
+[2022-08-12 15:27:45] [ DEBUG] [Main:76] Se actualizo la información del empleado: 
+ID: 4
+Nombre: Pablo
+Apellido: Del Litto
+Edad: 21
+Email: PABLODELLITTO@GMAIL.COM
+[2022-08-12 15:27:45] [ DEBUG] [Main:76] Se actualizo la información del empleado: 
+ID: 5
+Nombre: Nachoo
+Apellido: MOSCA
+Edad: 19
+Email: NACHOMOSCARDO@GMAIL.COM
+[2022-08-12 15:27:45] [ INFO ] [Main:80] Se elimino el empleado por su id, con la siguiente informacion: INSERT INTO EMPLEADOS (ID,PRIMER_NOMBRE,APELLIDO,EDAD, EMAIL) VALUES (3,'Pablo','Martini',67, 'PABLOMARTINI@GMAIL.COM')
+[2022-08-12 15:27:45] [ INFO ] [Main:81] Se elimino el empleado por su apellido, con la siguiente informacion: INSERT INTO EMPLEADOS (ID,PRIMER_NOMBRE,APELLIDO,EDAD,EMAIL) VALUES (1,'Rodolfo','Baspineiro',29, 'baspinerorodolf@gmail.com')
+[2022-08-15 16:59:46] [ WARN ] [Main:53] Se eliminó al usuario con id=3
+[2022-08-15 16:59:54] [ WARN ] [Main:53] Se eliminó al usuario con id=3
+[2022-08-15 17:00:00] [ DEBUG] [Main:76] Se actualizo la información del empleado: 
+ID: 2
+Nombre: Pedro
+Apellido: López
+Edad: 45
+Email: PEDROLOPEZ@GMAIL.COM
+[2022-08-15 17:00:00] [ DEBUG] [Main:76] Se actualizo la información del empleado: 
+ID: 4
+Nombre: Pablo
+Apellido: Del Litto
+Edad: 21
+Email: PABLODELLITTO@GMAIL.COM
+[2022-08-15 17:00:00] [ DEBUG] [Main:76] Se actualizo la información del empleado: 
+ID: 5
+Nombre: Nachoo
+Apellido: MOSCA
+Edad: 19
+Email: NACHOMOSCARDO@GMAIL.COM
+[2022-08-15 17:00:00] [ INFO ] [Main:80] Se elimino el empleado por su id, con la siguiente informacion: INSERT INTO EMPLEADOS (ID,PRIMER_NOMBRE,APELLIDO,EDAD, EMAIL) VALUES (3,'Pablo','Martini',67, 'PABLOMARTINI@GMAIL.COM')
+[2022-08-15 17:00:00] [ INFO ] [Main:81] Se elimino el empleado por su apellido, con la siguiente informacion: INSERT INTO EMPLEADOS (ID,PRIMER_NOMBRE,APELLIDO,EDAD,EMAIL) VALUES (1,'Rodolfo','Baspineiro',29, 'baspinerorodolfo@gmail.com')

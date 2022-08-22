@@ -1,0 +1,90 @@
+/*Ejercicio 1:
+Deberás escribir un objeto literal llamado estudiante que contenga las siguientes propiedades que deberás completar con tus datos:
+nombre
+apellido 
+camada 
+esParcial (VERDADERO)
+*/
+let estudiante = {
+    nombre : "Joaquin",
+    apellido: "Marmol",
+    camada : "0222TDPIMM1C1LAED0222FT", 
+    esParcial: true
+}
+
+/*
+EJERCICIO 1 PUNTO 2
+2.  Crear una función que, pasado un número entero (la futura nota), redondee según la siguiente regla: 
+	- NOTA < 4 : desaprobado
+    - 4 < NOTA < 7 : debe rendir examen final 
+	- NOTA >= 7 : promocionado.  
+La función deberá retornar la condición final del alumno (solo retorna la palabra). 
+Al momento de llamar a la función, deberás mostrar la siguiente frase: 
+	“El alumno obtuvo una nota igual a [NOTA] por lo tanto su condición es [CONDICIÓN]” 
+*/
+
+
+function notaParcial(nota){
+    let i = nota;
+    if(i<4){
+        return "desaprobado"
+    }
+    else if(i<7){
+        return "debe rendir examen final"
+    }
+    else{
+        return "promocionado"
+    }
+
+}
+console.log("El alumno obtuvo una nota igual a " + 10 + " por lo tanto su condición es " + notaParcial(10) );
+
+
+/*
+Ejercicio 2:
+Crea 1 array llamado clase.  
+Crea 3 objetos literales con las propiedades nombres, apellidos y bimestre de 3 compañeros. 
+Ej: Esteban Piazza 1 - Leandro Borrelli 1 - Martín Cejas 1
+Agrega estos 3 objetos al array llamado clase.
+Imprimir el array para ver que contenga esos objetos.
+Crea una función que reciba el array clase como parámetro e incremente en 1 el número de bimestre de cada uno de los alumnos, llámala siguienteCursada. Debes utilizar una estructura de repetición. 
+Deberás hacer el correcto llamado de la función mostrando el array clase antes y después de llamar a siguienteCursada. 
+*/
+
+let clase = [ ]
+
+let alumno1 = {nombre:"Esteban" , apellido:"Piazza" , bimestre: 1 ,}
+let alumno2 = {nombre:"Juan" , apellido:"Pizzero" , bimestre: 1 ,}
+let alumno3 = {nombre:"Pedro" , apellido:"Lopez" , bimestre: 1 ,}
+
+clase.push(alumno1, alumno2, alumno3)
+
+console.log(clase)
+
+function siguienteCursada (array) {
+    for (let i = 0; i < array.length; i++){
+        array[i].bimestre = array[i].bimestre + 1;
+    }
+    console.log(array);
+}
+siguienteCursada (clase)
+
+/*
+Ejercicio 3:
+1. Crear una función que apruebe o desapruebe alumnos en base a su asistencia y a su progreso completo en PlayGround (true, false). Para ello deberán: 
+Crear una constante asistenciaMinima que almacene el número mínimo de asistencias permitidas para la aprobación de la materia, en este caso serán 23 asistencias mínimas. 
+La función deberá recibir como parámetros la cantidad de asistencias  y la condición final ante PlayGround del alumno.
+Un alumno, será aprobado si tiene la cantidad de asistencias mínima y su progreso final está completo. Si alguna de estas opciones no se cumple, el alumno será automáticamente desaprobado. 
+Deberá retornar un string aprobado o desaprobado según corresponda
+*/
+
+function seAprueba(asistencia,playGround){
+    const asistenciaMinima = 23;
+    if(asistencia >= 23 && playGround){
+        return "Aprobado";
+    } else {
+        return "Desaprobado";
+    }
+}
+
+console.log(seAprueba(23,true));

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1656016366516" clover="3.2.0">
+  <project timestamp="1656016366516" name="All files">
+    <metrics statements="15" coveredstatements="9" conditionals="10" coveredconditionals="5" methods="3" coveredmethods="3" elements="28" coveredelements="17" complexity="0" loc="15" ncloc="15" packages="1" files="1" classes="1"/>
+    <file name="util.js" path="C:\Users\usuario\Desktop\Digital-Joaquin\segundo bimestre\MATERIAS\Testing\semana 6\clase17s\util.js">
+      <metrics statements="15" coveredstatements="9" conditionals="10" coveredconditionals="5" methods="3" coveredmethods="3"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="3" count="3" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="10" count="0" type="stmt"/>
+      <line num="11" count="0" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="16" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="17" count="0" type="stmt"/>
+      <line num="19" count="1" type="cond" truecount="2" falsecount="2"/>
+      <line num="20" count="0" type="stmt"/>
+      <line num="22" count="1" type="cond" truecount="2" falsecount="2"/>
+      <line num="23" count="0" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

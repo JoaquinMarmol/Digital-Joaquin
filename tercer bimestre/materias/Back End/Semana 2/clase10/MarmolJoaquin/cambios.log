@@ -1,0 +1,169 @@
+[2022-08-18 16:31:24] [ INFO ] [OdontologoDAOH2:51] Buscando al odontologo con numero de matricula: 1
+[2022-08-18 16:31:24] [ INFO ] [OdontologoDAOH2:75] Buscando todos los odontologos
+[2022-08-18 16:31:24] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: modelo.Odontologo@16c069df
+[2022-08-18 16:31:24] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: modelo.Odontologo@16c069df
+[2022-08-18 16:31:24] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: modelo.Odontologo@51a9ad5e
+[2022-08-18 16:31:24] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: modelo.Odontologo@51a9ad5e
+[2022-08-18 16:31:24] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: modelo.Odontologo@239105a8
+[2022-08-18 16:31:24] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: modelo.Odontologo@239105a8
+[2022-08-18 16:31:24] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: modelo.Odontologo@7d94beb9
+[2022-08-18 16:31:24] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: modelo.Odontologo@7d94beb9
+[2022-08-18 16:33:15] [ INFO ] [OdontologoDAOH2:51] Buscando al odontologo con numero de matricula: 1
+[2022-08-18 16:33:15] [ INFO ] [OdontologoDAOH2:75] Buscando todos los odontologos
+[2022-08-18 16:33:15] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: modelo.Odontologo@16c069df
+[2022-08-18 16:33:15] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: modelo.Odontologo@16c069df
+[2022-08-18 16:33:15] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: modelo.Odontologo@6aa8e115
+[2022-08-18 16:33:15] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: modelo.Odontologo@6aa8e115
+[2022-08-18 16:33:15] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: modelo.Odontologo@51a9ad5e
+[2022-08-18 16:33:15] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: modelo.Odontologo@51a9ad5e
+[2022-08-18 16:33:15] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: modelo.Odontologo@72ade7e3
+[2022-08-18 16:33:15] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: modelo.Odontologo@72ade7e3
+[2022-08-18 16:35:24] [ INFO ] [OdontologoDAOH2:51] Buscando al odontologo con numero de matricula: 1
+[2022-08-18 16:35:24] [ INFO ] [OdontologoDAOH2:75] Buscando todos los odontologos
+[2022-08-18 16:35:24] [ INFO ] [OdontologoDAOH2:94] Se encotraron todos los pacientes: Javier
+[2022-08-18 16:35:24] [ INFO ] [OdontologoDAOH2:94] Se encotraron todos los pacientes: Joaquin
+[2022-08-18 16:35:24] [ INFO ] [OdontologoDAOH2:94] Se encotraron todos los pacientes: Pedro
+[2022-08-18 16:35:24] [ INFO ] [OdontologoDAOH2:94] Se encotraron todos los pacientes: Rodolfo
+[2022-08-18 16:35:24] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:35:24] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: Paciente{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:35:24] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=2, Nombre='Joaquin', Apellido='Fernandez'}
+[2022-08-18 16:35:24] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: Paciente{Numero de matricula=2, Nombre='Joaquin', Apellido='Fernandez'}
+[2022-08-18 16:35:24] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=3, Nombre='Pedro', Apellido='Juarez'}
+[2022-08-18 16:35:24] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: Paciente{Numero de matricula=3, Nombre='Pedro', Apellido='Juarez'}
+[2022-08-18 16:35:24] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=4, Nombre='Rodolfo', Apellido='Baspiniero'}
+[2022-08-18 16:35:24] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: Paciente{Numero de matricula=4, Nombre='Rodolfo', Apellido='Baspiniero'}
+[2022-08-18 16:36:17] [ INFO ] [OdontologoDAOH2:51] Buscando al odontologo con numero de matricula: 1
+[2022-08-18 16:36:17] [ INFO ] [OdontologoDAOH2:69] El odontologo se encontró, esta es su información:Paciente{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:36:17] [ INFO ] [OdontologoDAOH2:75] Buscando todos los odontologos
+[2022-08-18 16:36:17] [ INFO ] [OdontologoDAOH2:94] Se encotraron todos los pacientes: Javier
+[2022-08-18 16:36:17] [ INFO ] [OdontologoDAOH2:94] Se encotraron todos los pacientes: Joaquin
+[2022-08-18 16:36:17] [ INFO ] [OdontologoDAOH2:94] Se encotraron todos los pacientes: Pedro
+[2022-08-18 16:36:17] [ INFO ] [OdontologoDAOH2:94] Se encotraron todos los pacientes: Rodolfo
+[2022-08-18 16:36:17] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:36:17] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: Paciente{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:36:17] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=2, Nombre='Joaquin', Apellido='Fernandez'}
+[2022-08-18 16:36:17] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: Paciente{Numero de matricula=2, Nombre='Joaquin', Apellido='Fernandez'}
+[2022-08-18 16:36:17] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=3, Nombre='Pedro', Apellido='Juarez'}
+[2022-08-18 16:36:17] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: Paciente{Numero de matricula=3, Nombre='Pedro', Apellido='Juarez'}
+[2022-08-18 16:36:17] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=4, Nombre='Rodolfo', Apellido='Baspiniero'}
+[2022-08-18 16:36:17] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: Paciente{Numero de matricula=4, Nombre='Rodolfo', Apellido='Baspiniero'}
+[2022-08-18 16:37:43] [ INFO ] [OdontologoDAOH2:51] Buscando al odontologo con numero de matricula: 1
+[2022-08-18 16:37:43] [ INFO ] [OdontologoDAOH2:69] El odontologo se encontró, esta es su información:Paciente{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:37:43] [ INFO ] [OdontologoDAOH2:75] Buscando todos los odontologos
+[2022-08-18 16:37:43] [ INFO ] [OdontologoDAOH2:94] Se encotraron todos los odontologos: Javier
+[2022-08-18 16:37:43] [ INFO ] [OdontologoDAOH2:94] Se encotraron todos los odontologos: Joaquin
+[2022-08-18 16:37:43] [ INFO ] [OdontologoDAOH2:94] Se encotraron todos los odontologos: Pedro
+[2022-08-18 16:37:43] [ INFO ] [OdontologoDAOH2:94] Se encotraron todos los odontologos: Rodolfo
+[2022-08-18 16:37:43] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:37:43] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: Paciente{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:37:43] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=2, Nombre='Joaquin', Apellido='Fernandez'}
+[2022-08-18 16:37:43] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: Paciente{Numero de matricula=2, Nombre='Joaquin', Apellido='Fernandez'}
+[2022-08-18 16:37:43] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=3, Nombre='Pedro', Apellido='Juarez'}
+[2022-08-18 16:37:43] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: Paciente{Numero de matricula=3, Nombre='Pedro', Apellido='Juarez'}
+[2022-08-18 16:37:43] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=4, Nombre='Rodolfo', Apellido='Baspiniero'}
+[2022-08-18 16:37:43] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: Paciente{Numero de matricula=4, Nombre='Rodolfo', Apellido='Baspiniero'}
+[2022-08-18 16:38:28] [ INFO ] [OdontologoDAOH2:51] Buscando al odontologo con numero de matricula: 1
+[2022-08-18 16:38:28] [ INFO ] [OdontologoDAOH2:69] El odontologo se encontró, esta es su información:Paciente{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:38:28] [ INFO ] [OdontologoDAOH2:75] Buscando todos los odontologos
+[2022-08-18 16:38:28] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: JavierLopez
+[2022-08-18 16:38:28] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: JoaquinFernandez
+[2022-08-18 16:38:28] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: PedroJuarez
+[2022-08-18 16:38:28] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: RodolfoBaspiniero
+[2022-08-18 16:38:28] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:38:28] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: Paciente{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:38:28] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=2, Nombre='Joaquin', Apellido='Fernandez'}
+[2022-08-18 16:38:28] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: Paciente{Numero de matricula=2, Nombre='Joaquin', Apellido='Fernandez'}
+[2022-08-18 16:38:28] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=3, Nombre='Pedro', Apellido='Juarez'}
+[2022-08-18 16:38:28] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: Paciente{Numero de matricula=3, Nombre='Pedro', Apellido='Juarez'}
+[2022-08-18 16:38:28] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=4, Nombre='Rodolfo', Apellido='Baspiniero'}
+[2022-08-18 16:38:28] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: Paciente{Numero de matricula=4, Nombre='Rodolfo', Apellido='Baspiniero'}
+[2022-08-18 16:38:59] [ INFO ] [OdontologoDAOH2:51] Buscando al odontologo con numero de matricula: 1
+[2022-08-18 16:38:59] [ INFO ] [OdontologoDAOH2:69] El odontologo se encontró, esta es su información:Paciente{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:38:59] [ INFO ] [OdontologoDAOH2:75] Buscando todos los odontologos
+[2022-08-18 16:38:59] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Javier Lopez
+[2022-08-18 16:38:59] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Joaquin Fernandez
+[2022-08-18 16:38:59] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Pedro Juarez
+[2022-08-18 16:38:59] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Rodolfo Baspiniero
+[2022-08-18 16:38:59] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:38:59] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: Paciente{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:38:59] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=2, Nombre='Joaquin', Apellido='Fernandez'}
+[2022-08-18 16:38:59] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: Paciente{Numero de matricula=2, Nombre='Joaquin', Apellido='Fernandez'}
+[2022-08-18 16:38:59] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=3, Nombre='Pedro', Apellido='Juarez'}
+[2022-08-18 16:38:59] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: Paciente{Numero de matricula=3, Nombre='Pedro', Apellido='Juarez'}
+[2022-08-18 16:38:59] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=4, Nombre='Rodolfo', Apellido='Baspiniero'}
+[2022-08-18 16:38:59] [ INFO ] [OdontologoDAOH2:44] El odontologo se registró con éxito: Paciente{Numero de matricula=4, Nombre='Rodolfo', Apellido='Baspiniero'}
+[2022-08-18 16:39:52] [ INFO ] [OdontologoDAOH2:51] Buscando al odontologo con numero de matricula: 1
+[2022-08-18 16:39:53] [ INFO ] [OdontologoDAOH2:69] El odontologo se encontro, esta es su informacion:Paciente{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:39:53] [ INFO ] [OdontologoDAOH2:75] Buscando todos los odontologos
+[2022-08-18 16:39:53] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Javier Lopez
+[2022-08-18 16:39:53] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Joaquin Fernandez
+[2022-08-18 16:39:53] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Pedro Juarez
+[2022-08-18 16:39:53] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Rodolfo Baspiniero
+[2022-08-18 16:39:53] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:39:53] [ INFO ] [OdontologoDAOH2:44] El odontologo se registro con exito: Paciente{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:39:53] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=2, Nombre='Joaquin', Apellido='Fernandez'}
+[2022-08-18 16:39:53] [ INFO ] [OdontologoDAOH2:44] El odontologo se registro con exito: Paciente{Numero de matricula=2, Nombre='Joaquin', Apellido='Fernandez'}
+[2022-08-18 16:39:53] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=3, Nombre='Pedro', Apellido='Juarez'}
+[2022-08-18 16:39:53] [ INFO ] [OdontologoDAOH2:44] El odontologo se registro con exito: Paciente{Numero de matricula=3, Nombre='Pedro', Apellido='Juarez'}
+[2022-08-18 16:39:53] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Paciente{Numero de matricula=4, Nombre='Rodolfo', Apellido='Baspiniero'}
+[2022-08-18 16:39:53] [ INFO ] [OdontologoDAOH2:44] El odontologo se registro con exito: Paciente{Numero de matricula=4, Nombre='Rodolfo', Apellido='Baspiniero'}
+[2022-08-18 16:40:58] [ INFO ] [OdontologoDAOH2:51] Buscando al odontologo con numero de matricula: 1
+[2022-08-18 16:40:58] [ INFO ] [OdontologoDAOH2:69] El odontologo se encontro, esta es su informacion:Odontologo{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:40:58] [ INFO ] [OdontologoDAOH2:75] Buscando todos los odontologos
+[2022-08-18 16:40:58] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Javier Lopez
+[2022-08-18 16:40:58] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Joaquin Fernandez
+[2022-08-18 16:40:58] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Pedro Juarez
+[2022-08-18 16:40:58] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Rodolfo Baspiniero
+[2022-08-18 16:40:58] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Odontologo{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:40:58] [ INFO ] [OdontologoDAOH2:44] El odontologo se registro con exito: Odontologo{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:40:58] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Odontologo{Numero de matricula=2, Nombre='Joaquin', Apellido='Fernandez'}
+[2022-08-18 16:40:58] [ INFO ] [OdontologoDAOH2:44] El odontologo se registro con exito: Odontologo{Numero de matricula=2, Nombre='Joaquin', Apellido='Fernandez'}
+[2022-08-18 16:40:58] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Odontologo{Numero de matricula=3, Nombre='Pedro', Apellido='Juarez'}
+[2022-08-18 16:40:58] [ INFO ] [OdontologoDAOH2:44] El odontologo se registro con exito: Odontologo{Numero de matricula=3, Nombre='Pedro', Apellido='Juarez'}
+[2022-08-18 16:40:58] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Odontologo{Numero de matricula=4, Nombre='Rodolfo', Apellido='Baspiniero'}
+[2022-08-18 16:40:58] [ INFO ] [OdontologoDAOH2:44] El odontologo se registro con exito: Odontologo{Numero de matricula=4, Nombre='Rodolfo', Apellido='Baspiniero'}
+[2022-08-18 16:43:01] [ INFO ] [OdontologoDAOH2:51] Buscando al odontologo con numero de matricula: 1
+[2022-08-18 16:43:01] [ INFO ] [OdontologoDAOH2:69] El odontologo con matricula 1esJavierLopez
+[2022-08-18 16:43:01] [ INFO ] [OdontologoDAOH2:75] Buscando todos los odontologos
+[2022-08-18 16:43:01] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Javier Lopez
+[2022-08-18 16:43:01] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Joaquin Fernandez
+[2022-08-18 16:43:01] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Pedro Juarez
+[2022-08-18 16:43:01] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Rodolfo Baspiniero
+[2022-08-18 16:43:01] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Odontologo{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:43:01] [ INFO ] [OdontologoDAOH2:44] El odontologo se registro con exito: Odontologo{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:43:01] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Odontologo{Numero de matricula=2, Nombre='Joaquin', Apellido='Fernandez'}
+[2022-08-18 16:43:01] [ INFO ] [OdontologoDAOH2:44] El odontologo se registro con exito: Odontologo{Numero de matricula=2, Nombre='Joaquin', Apellido='Fernandez'}
+[2022-08-18 16:43:01] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Odontologo{Numero de matricula=3, Nombre='Pedro', Apellido='Juarez'}
+[2022-08-18 16:43:01] [ INFO ] [OdontologoDAOH2:44] El odontologo se registro con exito: Odontologo{Numero de matricula=3, Nombre='Pedro', Apellido='Juarez'}
+[2022-08-18 16:43:01] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Odontologo{Numero de matricula=4, Nombre='Rodolfo', Apellido='Baspiniero'}
+[2022-08-18 16:43:01] [ INFO ] [OdontologoDAOH2:44] El odontologo se registro con exito: Odontologo{Numero de matricula=4, Nombre='Rodolfo', Apellido='Baspiniero'}
+[2022-08-18 16:43:43] [ INFO ] [OdontologoDAOH2:51] Buscando al odontologo con numero de matricula: 1
+[2022-08-18 16:43:43] [ INFO ] [OdontologoDAOH2:69] El odontologo con matricula 1 es Javier Lopez
+[2022-08-18 16:43:43] [ INFO ] [OdontologoDAOH2:75] Buscando todos los odontologos
+[2022-08-18 16:43:43] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Javier Lopez
+[2022-08-18 16:43:43] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Joaquin Fernandez
+[2022-08-18 16:43:43] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Pedro Juarez
+[2022-08-18 16:43:43] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Rodolfo Baspiniero
+[2022-08-18 16:43:43] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Odontologo{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:43:43] [ INFO ] [OdontologoDAOH2:44] El odontologo se registro con exito: Odontologo{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 16:43:43] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Odontologo{Numero de matricula=2, Nombre='Joaquin', Apellido='Fernandez'}
+[2022-08-18 16:43:43] [ INFO ] [OdontologoDAOH2:44] El odontologo se registro con exito: Odontologo{Numero de matricula=2, Nombre='Joaquin', Apellido='Fernandez'}
+[2022-08-18 16:43:43] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Odontologo{Numero de matricula=3, Nombre='Pedro', Apellido='Juarez'}
+[2022-08-18 16:43:43] [ INFO ] [OdontologoDAOH2:44] El odontologo se registro con exito: Odontologo{Numero de matricula=3, Nombre='Pedro', Apellido='Juarez'}
+[2022-08-18 16:43:43] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Odontologo{Numero de matricula=4, Nombre='Rodolfo', Apellido='Baspiniero'}
+[2022-08-18 16:43:43] [ INFO ] [OdontologoDAOH2:44] El odontologo se registro con exito: Odontologo{Numero de matricula=4, Nombre='Rodolfo', Apellido='Baspiniero'}
+[2022-08-18 17:13:47] [ INFO ] [OdontologoDAOH2:51] Buscando al odontologo con numero de matricula: 1
+[2022-08-18 17:13:47] [ INFO ] [OdontologoDAOH2:69] El odontologo con matricula 1 es Javier Lopez
+[2022-08-18 17:13:47] [ INFO ] [OdontologoDAOH2:75] Buscando todos los odontologos
+[2022-08-18 17:13:47] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Javier Lopez
+[2022-08-18 17:13:47] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Joaquin Fernandez
+[2022-08-18 17:13:47] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Pedro Juarez
+[2022-08-18 17:13:47] [ INFO ] [OdontologoDAOH2:94] Se encotro al odontologo: Rodolfo Baspiniero
+[2022-08-18 17:13:47] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Odontologo{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 17:13:47] [ INFO ] [OdontologoDAOH2:44] El odontologo se registro con exito: Odontologo{Numero de matricula=1, Nombre='Javier', Apellido='Lopez'}
+[2022-08-18 17:13:47] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Odontologo{Numero de matricula=2, Nombre='Joaquin', Apellido='Fernandez'}
+[2022-08-18 17:13:47] [ INFO ] [OdontologoDAOH2:44] El odontologo se registro con exito: Odontologo{Numero de matricula=2, Nombre='Joaquin', Apellido='Fernandez'}
+[2022-08-18 17:13:47] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Odontologo{Numero de matricula=3, Nombre='Pedro', Apellido='Juarez'}
+[2022-08-18 17:13:47] [ INFO ] [OdontologoDAOH2:44] El odontologo se registro con exito: Odontologo{Numero de matricula=3, Nombre='Pedro', Apellido='Juarez'}
+[2022-08-18 17:13:47] [ INFO ] [OdontologoDAOH2:25] Registrando un nuevo odontologo: Odontologo{Numero de matricula=4, Nombre='Rodolfo', Apellido='Baspiniero'}
+[2022-08-18 17:13:47] [ INFO ] [OdontologoDAOH2:44] El odontologo se registro con exito: Odontologo{Numero de matricula=4, Nombre='Rodolfo', Apellido='Baspiniero'}

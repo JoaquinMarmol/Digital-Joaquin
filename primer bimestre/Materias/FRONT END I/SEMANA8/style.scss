@@ -1,0 +1,94 @@
+
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-bottom: 3rem;
+}
+
+main{
+    border:solid;
+    img.img3puntos {
+        height: 3px;
+    }
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    .fotosperfiles{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 3rem;
+        border-width: thin;
+        img.escritorio{
+            display:none;
+        }
+        
+    }
+    .publicacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .usuario{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content:space-between;
+            padding-bottom: 2rem;
+            
+        }
+        
+        .iconos{
+            display: flex;
+            img{
+                padding: 0.5rem 0;
+                padding-right: 1rem;
+            }
+        }
+        .comentarios{
+            flex-direction: column;
+            div{
+                display: flex;
+                align-items: center;
+                padding-bottom: 0.3rem;
+                font-size: 10px;
+                
+
+                h2{
+                    font-size: 10px;
+                    padding-right: 0.2rem;
+                }
+                
+            }
+            .comentario2{
+                position: relative;
+                top: -0.5rem;
+            }
+            .vercomentarios{
+                color: #A49B9B;
+            }
+        }
+    }
+    padding-bottom: 6rem;
+    
+
+}
+
+footer{
+    .footer{
+        display: flex;
+        color: #FFFFFF;
+        justify-content:center;
+    }
+    background-color: #222222;
+}
+
+@media (min-width: 768px){
+    main .fotosperfiles img.escritorio{
+                display:block;
+            }
+}

@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Inter; 
+}
+header{
+    background-color:9FF8E2;
+}
+body{
+    background-color:#5DADF8;
+    height:100vh;
+    width:100vw;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    gap:2px;
+
+}
+footer{
+    background-color:#9FCDF8;
+}
