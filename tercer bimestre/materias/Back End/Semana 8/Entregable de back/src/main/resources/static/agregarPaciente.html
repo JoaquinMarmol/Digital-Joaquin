@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Estudiantes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="/js/post_pacientes.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/index.html">Sistema</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Odontologos
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/odontologosList.html">Listar odontólogos</a>
+                    <a class="dropdown-item" href="/agregarOdontologos.html">Agregar odontólogos</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Pacientes
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/pacientesList.html">Listar pacientes</a>
+                    <a class="dropdown-item" href="/agregarPaciente.html">Agregar paciente</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Turnos
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/turnosList.html">Listar turnos</a>
+                    <a class="dropdown-item" href="/agregarTurno.html">Agregar turno</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<form id = "inputForm">
+<div class="container">
+
+    <div class="row">
+        <div class="col">
+            <label for="inputNombre">Nombre</label>
+            <input id ="inputNombre" type="text" class="form-control" placeholder="Nombre">
+        </div>
+        <div class="col">
+            <label for="inputApellido">Apellido</label>
+            <input id ="inputApellido" type="text" class="form-control" placeholder="Apellido">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+        </div>
+
+        <div class="col">
+            <label for="inputDni">DNI</label>
+            <input type="text" class="form-control" id="inputDni">
+        </div>
+    </div>
+    <div class="row">
+    <div class="col">
+        <label for="inputCalle">Calle</label>
+        <input type="text" class="form-control" id="inputCalle" placeholder="1234 Main St">
+    </div>
+    <div class=" col">
+        <label for="inputNumero">Numero</label>
+        <input type="text" class="form-control" id="inputNumero">
+    </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="inputLocalidad">Localidad</label>
+            <input type="text" class="form-control" id="inputLocalidad">
+        </div>
+        <div class="col ">
+            <label for="inputProvincia">Provincia</label>
+            <select id="inputProvincia" class="form-control">
+                <option selected>provincias</option>
+                <option>Buenos Aires</option>
+            </select>
+        </div>
+        </div>
+    <div class="form">
+        <label for="inputFecha">Fecha</label>
+        <input type="date" class="form-control" id="inputFecha">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Agregar Paciente</button>
+</div>
+
+
+
+</form>
+</body>
+</html>
