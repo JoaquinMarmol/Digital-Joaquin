@@ -1,0 +1,222 @@
+{
+	"id": "c9c0d012-c1c5-4f64-89d4-7cecb7939e1a",
+	"name": "Proyecto integrador - grupo 7",
+	"timestamp": "2022-12-08T00:57:51.260Z",
+	"collection_id": "24571032-50e3a2e8-1863-4814-a3d1-72b30942f887",
+	"folder_id": "24571032-34cf4202-f100-43fa-8f04-52fa452c501a",
+	"environment_id": "24571032-9b6062f2-191f-4f0a-912b-596b7ee2adf6",
+	"totalPass": 9,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "331e720b-a843-41bb-95e2-4f82d67d0ce7",
+			"name": "Get productos",
+			"url": "http://3.14.246.73:8080/vintage/producto",
+			"time": 629,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				629
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "0183fac4-9783-4f47-a96d-9bf330bc3d67",
+			"name": "Get produco por ID",
+			"url": "http://3.14.246.73:8080/vintage/producto/1",
+			"time": 203,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				203
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "b745761b-41a9-4c14-b804-84b316cf1f54",
+			"name": "Post productos",
+			"url": "http://3.14.246.73:8080/vintage/producto",
+			"time": 286,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				286
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "fbe30545-71b7-4a04-9ac4-26521bb35c15",
+			"name": "Put producto",
+			"url": "http://3.14.246.73:8080/vintage/producto",
+			"time": 205,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				205
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "5272974f-62ff-4ee8-a54a-48c1dc1d61ad",
+			"name": "Del producto",
+			"url": "http://3.14.246.73:8080/vintage/producto/43",
+			"time": 217,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				217
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "5b9c51ff-e20b-4527-b4a1-4ac66abbe6bd",
+			"name": "Post producto (NO ADMIN)",
+			"url": "http://3.14.246.73:8080/vintage/producto",
+			"time": 191,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				191
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1731,
+	"collection": {
+		"requests": [
+			{
+				"id": "331e720b-a843-41bb-95e2-4f82d67d0ce7",
+				"method": "GET"
+			},
+			{
+				"id": "0183fac4-9783-4f47-a96d-9bf330bc3d67",
+				"method": "GET"
+			},
+			{
+				"id": "b745761b-41a9-4c14-b804-84b316cf1f54",
+				"method": "POST"
+			},
+			{
+				"id": "fbe30545-71b7-4a04-9ac4-26521bb35c15",
+				"method": "PUT"
+			},
+			{
+				"id": "5272974f-62ff-4ee8-a54a-48c1dc1d61ad",
+				"method": "DELETE"
+			},
+			{
+				"id": "5b9c51ff-e20b-4527-b4a1-4ac66abbe6bd",
+				"method": "POST"
+			}
+		]
+	}
+}

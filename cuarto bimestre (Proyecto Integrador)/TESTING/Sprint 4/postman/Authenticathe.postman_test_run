@@ -1,0 +1,80 @@
+{
+	"id": "6c8cea93-47fd-4162-b843-a60f25873dd4",
+	"name": "Proyecto integrador - grupo 7",
+	"timestamp": "2022-12-08T01:53:02.421Z",
+	"collection_id": "24571032-50e3a2e8-1863-4814-a3d1-72b30942f887",
+	"folder_id": "24571032-21f4e1da-2630-4293-9d0c-5176483b56a9",
+	"environment_id": "24571032-9b6062f2-191f-4f0a-912b-596b7ee2adf6",
+	"totalPass": 2,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "c8b7b3b4-bf08-4b0d-8036-8d3a3a5d7140",
+			"name": "Post authenticathe",
+			"url": "http://3.14.246.73:8080/vintage/authenticate",
+			"time": 327,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				327
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "1d0710ee-2402-4b80-ab79-3c5d50d69d2b",
+			"name": "Post authenticathe (USUARIO SIN PERMISOS)",
+			"url": "http://3.14.246.73:8080/vintage/authenticate",
+			"time": 281,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				281
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 608,
+	"collection": {
+		"requests": [
+			{
+				"id": "c8b7b3b4-bf08-4b0d-8036-8d3a3a5d7140",
+				"method": "POST"
+			},
+			{
+				"id": "1d0710ee-2402-4b80-ab79-3c5d50d69d2b",
+				"method": "POST"
+			}
+		]
+	}
+}

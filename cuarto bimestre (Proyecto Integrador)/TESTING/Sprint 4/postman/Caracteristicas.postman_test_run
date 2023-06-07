@@ -1,0 +1,142 @@
+{
+	"id": "cd58b7f9-c655-4937-842e-f7531b314288",
+	"name": "Proyecto integrador - grupo 7",
+	"timestamp": "2022-12-07T23:53:10.350Z",
+	"collection_id": "24571032-50e3a2e8-1863-4814-a3d1-72b30942f887",
+	"folder_id": "24571032-6a9da316-3768-46b1-a5eb-70efb7f10fd2",
+	"environment_id": "24571032-9b6062f2-191f-4f0a-912b-596b7ee2adf6",
+	"totalPass": 4,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "b6df1fd9-3692-463d-b3f9-4858993bc01d",
+			"name": "Get caracteristicas",
+			"url": "http://3.14.246.73:8080/vintage/caracteristica",
+			"time": 363,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				363
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "ec88794c-bb1d-4c0a-999a-bdaad5a08a63",
+			"name": "Post caracteristicas",
+			"url": "http://3.14.246.73:8080/vintage/caracteristica",
+			"time": 191,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				191
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "291ba310-8069-4a04-ba4a-23bfe60af72c",
+			"name": "Put caracteristicas",
+			"url": "http://3.14.246.73:8080/vintage/caracteristica",
+			"time": 211,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				211
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "3ab750b4-c5d5-43ff-af84-d231c52dbf20",
+			"name": "Del características",
+			"url": "http://3.14.246.73:8080/vintage/caracteristica/37",
+			"time": 200,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				200
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 965,
+	"collection": {
+		"requests": [
+			{
+				"id": "b6df1fd9-3692-463d-b3f9-4858993bc01d",
+				"method": "GET"
+			},
+			{
+				"id": "ec88794c-bb1d-4c0a-999a-bdaad5a08a63",
+				"method": "POST"
+			},
+			{
+				"id": "291ba310-8069-4a04-ba4a-23bfe60af72c",
+				"method": "PUT"
+			},
+			{
+				"id": "3ab750b4-c5d5-43ff-af84-d231c52dbf20",
+				"method": "DELETE"
+			}
+		]
+	}
+}

@@ -1,0 +1,191 @@
+{
+	"id": "a0ca6be4-a275-4d82-98ee-d7009ccdfb5c",
+	"name": "Proyecto integrador - grupo 7",
+	"timestamp": "2022-12-07T23:00:32.472Z",
+	"collection_id": "24571032-50e3a2e8-1863-4814-a3d1-72b30942f887",
+	"folder_id": "24571032-34cf4202-f100-43fa-8f04-52fa452c501a",
+	"environment_id": "24571032-9b6062f2-191f-4f0a-912b-596b7ee2adf6",
+	"totalPass": 7,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "331e720b-a843-41bb-95e2-4f82d67d0ce7",
+			"name": "Get productos",
+			"url": "http://3.14.246.73:8080/vintage/producto",
+			"time": 633,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				633
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "0183fac4-9783-4f47-a96d-9bf330bc3d67",
+			"name": "Get produco por ID",
+			"url": "http://3.14.246.73:8080/vintage/producto/1",
+			"time": 202,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				202
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "b745761b-41a9-4c14-b804-84b316cf1f54",
+			"name": "Post productos",
+			"url": "http://3.14.246.73:8080/vintage/producto",
+			"time": 339,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				339
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "fbe30545-71b7-4a04-9ac4-26521bb35c15",
+			"name": "Put producto",
+			"url": "http://3.14.246.73:8080/vintage/producto",
+			"time": 250,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				250
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "5272974f-62ff-4ee8-a54a-48c1dc1d61ad",
+			"name": "Del producto",
+			"url": "http://3.14.246.73:8080/vintage/producto/41",
+			"time": 215,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				215
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1639,
+	"collection": {
+		"requests": [
+			{
+				"id": "331e720b-a843-41bb-95e2-4f82d67d0ce7",
+				"method": "GET"
+			},
+			{
+				"id": "0183fac4-9783-4f47-a96d-9bf330bc3d67",
+				"method": "GET"
+			},
+			{
+				"id": "b745761b-41a9-4c14-b804-84b316cf1f54",
+				"method": "POST"
+			},
+			{
+				"id": "fbe30545-71b7-4a04-9ac4-26521bb35c15",
+				"method": "PUT"
+			},
+			{
+				"id": "5272974f-62ff-4ee8-a54a-48c1dc1d61ad",
+				"method": "DELETE"
+			}
+		]
+	}
+}

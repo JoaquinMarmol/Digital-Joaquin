@@ -1,0 +1,142 @@
+{
+	"id": "1362dcde-bcbb-42cc-b187-01b0268350a7",
+	"name": "Proyecto integrador - grupo 7",
+	"timestamp": "2022-12-07T22:26:12.763Z",
+	"collection_id": "24571032-50e3a2e8-1863-4814-a3d1-72b30942f887",
+	"folder_id": "24571032-84c7c4e9-d8f1-40f1-ae9e-a0472059ab00",
+	"environment_id": "24571032-9b6062f2-191f-4f0a-912b-596b7ee2adf6",
+	"totalPass": 4,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "0614646d-ce8f-4a58-aee5-429e01f8a62e",
+			"name": "Get categorias",
+			"url": "http://3.14.246.73:8080/vintage/categorias",
+			"time": 408,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				408
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "9a84c53e-03b3-4c75-88fe-01f4536d8d5e",
+			"name": "Post categorias",
+			"url": "http://3.14.246.73:8080/vintage/categorias",
+			"time": 220,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				220
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "544478c9-205f-439a-a145-69ea6b0b631b",
+			"name": "Put Categorias",
+			"url": "http://3.14.246.73:8080/vintage/categorias",
+			"time": 224,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				224
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "c70f9984-ff3a-43cb-a2ec-5f342a04901e",
+			"name": "Del categorias",
+			"url": "http://3.14.246.73:8080/vintage/categorias/34",
+			"time": 232,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				232
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1084,
+	"collection": {
+		"requests": [
+			{
+				"id": "0614646d-ce8f-4a58-aee5-429e01f8a62e",
+				"method": "GET"
+			},
+			{
+				"id": "9a84c53e-03b3-4c75-88fe-01f4536d8d5e",
+				"method": "POST"
+			},
+			{
+				"id": "544478c9-205f-439a-a145-69ea6b0b631b",
+				"method": "PUT"
+			},
+			{
+				"id": "c70f9984-ff3a-43cb-a2ec-5f342a04901e",
+				"method": "DELETE"
+			}
+		]
+	}
+}

@@ -1,0 +1,735 @@
+{
+  "id": "a2e14be5-01e0-4e9b-8fd9-2c295c087bf7",
+  "version": "2.0",
+  "name": "Sprint4",
+  "url": "http://vintagecar.sytes.net/",
+  "tests": [{
+    "id": "d330b56f-6016-4c3a-a977-e16b7dc167f3",
+    "name": "TC34-MisReservas",
+    "commands": [{
+      "id": "753dd859-0621-4b53-b929-ab7a031e1d17",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e834a16-04ed-4217-bf16-3abddb204598",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "854a78f9-5edf-4a35-bc28-03b9e0cb4478",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//div[@id='offcanvasNavbar-expand-sm']/div[2]/div/a[2]/font/font)[2]",
+      "targets": [
+        ["xpath=(//div[@id='offcanvasNavbar-expand-sm']/div[2]/div/a[2]/font/font)[2]", "xpath:idRelative"],
+        ["xpath=//nav[8]/div/div/div[2]/div/a[2]/font/font", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdee7fb2-5276-4049-b1b3-a0b8718d06be",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#offcanvasNavbar-expand-sm .nav-link",
+      "targets": [
+        ["css=#offcanvasNavbar-expand-sm .nav-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Crear Cuenta')])[4]", "xpath:link"],
+        ["xpath=//div[@id='offcanvasNavbar-expand-sm']/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/signup')])[4]", "xpath:href"],
+        ["xpath=//nav[4]/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f95cc524-f480-47b5-a88c-5ba4de12616c",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#offcanvasNavbar-expand-sm .nav-link",
+      "targets": [
+        ["css=#offcanvasNavbar-expand-sm .nav-link", "css:finder"],
+        ["xpath=//div[@id='offcanvasNavbar-expand-sm']/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/signup')])[4]", "xpath:href"],
+        ["xpath=//nav[4]/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a84d243-e06d-41df-930a-d61daad46c87",
+      "comment": "",
+      "command": "click",
+      "target": "id=formBasicNombre",
+      "targets": [
+        ["id=formBasicNombre", "id"],
+        ["name=email", "name"],
+        ["css=#formBasicNombre", "css:finder"],
+        ["xpath=//input[@id='formBasicNombre']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f958c456-02f2-4020-b9c4-c9e4c47ee747",
+      "comment": "",
+      "command": "type",
+      "target": "id=formBasicNombre",
+      "targets": [
+        ["id=formBasicNombre", "id"],
+        ["name=email", "name"],
+        ["css=#formBasicNombre", "css:finder"],
+        ["xpath=//input[@id='formBasicNombre']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "fernandopajon06@gmail.com"
+    }, {
+      "id": "50790576-999e-4449-a64f-729bd4e239a8",
+      "comment": "",
+      "command": "click",
+      "target": "id=formBasicPassword",
+      "targets": [
+        ["id=formBasicPassword", "id"],
+        ["name=password", "name"],
+        ["css=#formBasicPassword", "css:finder"],
+        ["xpath=//input[@id='formBasicPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da372b90-d791-4f2c-b458-499803a45dec",
+      "comment": "",
+      "command": "type",
+      "target": "id=formBasicPassword",
+      "targets": [
+        ["id=formBasicPassword", "id"],
+        ["name=password", "name"],
+        ["css=#formBasicPassword", "css:finder"],
+        ["xpath=//input[@id='formBasicPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "789456"
+    }, {
+      "id": "3219c4b4-ab2f-4989-883d-546afe4405e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.formularioButton",
+      "targets": [
+        ["css=.formularioButton", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ingresar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "666ef681-16d3-4c5c-ab27-cf7103ba8475",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,107.33333587646484)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "441a4396-8d45-4cfb-aeb6-a011211441d1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@id='dropdown-split-basic'])[8]",
+      "targets": [
+        ["xpath=(//button[@id='dropdown-split-basic'])[8]", "xpath:attributes"],
+        ["xpath=(//div[@id='offcanvasNavbarLabel-expand-sm']/a/div[2]/div/button)[2]", "xpath:idRelative"],
+        ["xpath=//nav[8]/div/div/div[2]/div/a/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d6b07ee-297c-456a-80f8-bea0f6dfbbbc",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=(//button[@id='dropdown-split-basic'])[8]",
+      "targets": [
+        ["xpath=(//button[@id='dropdown-split-basic'])[8]", "xpath:attributes"],
+        ["xpath=(//div[@id='offcanvasNavbarLabel-expand-sm']/a/div[2]/div/button)[2]", "xpath:idRelative"],
+        ["xpath=//nav[8]/div/div/div[2]/div/a/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d72a090d-a770-47b1-b0cc-81b0b7aa5906",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.show > #dropdown-split-basic",
+      "targets": [
+        ["css=.show > #dropdown-split-basic", "css:finder"],
+        ["xpath=(//button[@id='dropdown-split-basic'])[8]", "xpath:attributes"],
+        ["xpath=(//div[@id='offcanvasNavbarLabel-expand-sm']/a/div[2]/div/button)[2]", "xpath:idRelative"],
+        ["xpath=//nav[8]/div/div/div[2]/div/a/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6b9fd0d-0cce-4b19-a025-7e49dc764432",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > .dropdown-item > font > font",
+      "targets": [
+        ["css=a > .dropdown-item > font > font", "css:finder"],
+        ["xpath=//div[@id='offcanvasNavbarLabel-expand-sm']/a/div[2]/div/div/a[2]/a/font/font", "xpath:idRelative"],
+        ["xpath=//a[2]/a/font/font", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d7073fe-2709-4a2a-ac40-b82971262aed",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f97bf74d-32dc-4e0a-a5c8-d44613daecd5",
+    "name": "TC37-FormularioProducto",
+    "commands": [{
+      "id": "7eb0c829-333b-456f-a561-f75915d701fe",
+      "comment": "",
+      "command": "open",
+      "target": "http://vintagecar.sytes.net/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a1fe9de-efd2-4e30-9b5a-96f876d3d266",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1583e7f0-75a3-44ab-80fa-309c6355a1ee",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(text(),'Iniciar Sesion')])[8]",
+      "targets": [
+        ["xpath=(//a[contains(text(),'Iniciar Sesion')])[8]", "xpath:link"],
+        ["xpath=(//div[@id='offcanvasNavbar-expand-sm']/div[2]/div/a[2])[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/login')])[8]", "xpath:href"],
+        ["xpath=//nav[8]/div/div/div[2]/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88b26f21-6c64-4d7e-b162-8a0a12149fa4",
+      "comment": "",
+      "command": "click",
+      "target": "id=formBasicNombre",
+      "targets": [
+        ["id=formBasicNombre", "id"],
+        ["name=email", "name"],
+        ["css=#formBasicNombre", "css:finder"],
+        ["xpath=//input[@id='formBasicNombre']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ea353ef-202a-421b-aaeb-43bab829d6cf",
+      "comment": "",
+      "command": "type",
+      "target": "id=formBasicNombre",
+      "targets": [
+        ["id=formBasicNombre", "id"],
+        ["name=email", "name"],
+        ["css=#formBasicNombre", "css:finder"],
+        ["xpath=//input[@id='formBasicNombre']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "fernandopajon06@gmail.com"
+    }, {
+      "id": "d44593f4-a90f-4b19-a409-0a48bfbd316a",
+      "comment": "",
+      "command": "type",
+      "target": "id=formBasicPassword",
+      "targets": [
+        ["id=formBasicPassword", "id"],
+        ["name=password", "name"],
+        ["css=#formBasicPassword", "css:finder"],
+        ["xpath=//input[@id='formBasicPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "789456"
+    }, {
+      "id": "b89979da-d79b-4be9-8602-84ec22ece44f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.formularioButton",
+      "targets": [
+        ["css=.formularioButton", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ingresar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "757b58ac-be1a-42a4-a2d4-6c319cc62499",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,107.33333587646484)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2543e98-0934-4109-8348-94eec1f148a9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//div[@id='offcanvasNavbarLabel-expand-sm']/a/div[2]/a/button)[2]",
+      "targets": [
+        ["xpath=(//div[@id='offcanvasNavbarLabel-expand-sm']/a/div[2]/a/button)[2]", "xpath:idRelative"],
+        ["xpath=//nav[8]/div/div/div[2]/div/a/div[2]/a/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b340746d-bcb2-4914-b129-067c66fe3742",
+    "name": "TC36-MostrarVacioMisReservas",
+    "commands": [{
+      "id": "986843e1-07eb-4eba-8ba1-2a3efa120179",
+      "comment": "",
+      "command": "open",
+      "target": "http://vintagecar.sytes.net/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07be400b-4a22-4dee-bde2-31c16d93c066",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0d66826-0fc6-4088-b665-e2b5a09fbb1d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(text(),'Iniciar Sesion')])[8]",
+      "targets": [
+        ["xpath=(//a[contains(text(),'Iniciar Sesion')])[8]", "xpath:link"],
+        ["xpath=(//div[@id='offcanvasNavbar-expand-sm']/div[2]/div/a[2])[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/login')])[8]", "xpath:href"],
+        ["xpath=//nav[8]/div/div/div[2]/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b43d0c59-9364-4d7b-b5cf-37956a02894d",
+      "comment": "",
+      "command": "click",
+      "target": "id=formBasicNombre",
+      "targets": [
+        ["id=formBasicNombre", "id"],
+        ["name=email", "name"],
+        ["css=#formBasicNombre", "css:finder"],
+        ["xpath=//input[@id='formBasicNombre']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8128dd4-6aa3-479d-8b72-ce09db24428f",
+      "comment": "",
+      "command": "type",
+      "target": "id=formBasicNombre",
+      "targets": [
+        ["id=formBasicNombre", "id"],
+        ["name=email", "name"],
+        ["css=#formBasicNombre", "css:finder"],
+        ["xpath=//input[@id='formBasicNombre']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "fernandopajon06@gmail.com"
+    }, {
+      "id": "3af162e6-182d-460b-827d-0974e764544e",
+      "comment": "",
+      "command": "type",
+      "target": "id=formBasicPassword",
+      "targets": [
+        ["id=formBasicPassword", "id"],
+        ["name=password", "name"],
+        ["css=#formBasicPassword", "css:finder"],
+        ["xpath=//input[@id='formBasicPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "789456"
+    }, {
+      "id": "070af6f7-99d8-409e-b536-8a69fa9e3bba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.formularioButton",
+      "targets": [
+        ["css=.formularioButton", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ingresar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb65a48b-5429-4e00-b224-01d9c574858d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,18)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "494b574f-46c6-455b-a95f-94eb17e60b2d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@id='dropdown-split-basic'])[8]",
+      "targets": [
+        ["xpath=(//button[@id='dropdown-split-basic'])[8]", "xpath:attributes"],
+        ["xpath=(//div[@id='offcanvasNavbarLabel-expand-sm']/a/div[2]/div/button)[2]", "xpath:idRelative"],
+        ["xpath=//nav[8]/div/div/div[2]/div/a/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39d290d5-155f-4992-8460-216f48a62b48",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mis Reservas",
+      "targets": [
+        ["linkText=Mis Reservas", "linkText"],
+        ["css=.dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Mis Reservas')]", "xpath:link"],
+        ["xpath=//div[@id='offcanvasNavbarLabel-expand-sm']/a/div[2]/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/reserva/usuario_id/32')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71c8270b-b301-4df3-9d00-bfa0f8bf5964",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f8f1b9f5-fe4d-4fe8-a2e0-52cf2f40f1d5",
+    "name": "TC39-NoAdministrarProducto_User",
+    "commands": [{
+      "id": "17b82b54-06b2-48ea-a4c0-a0f34f9fbcd8",
+      "comment": "",
+      "command": "open",
+      "target": "http://vintagecar.sytes.net/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f87845d9-eb4c-41e5-aa5a-24c01a030064",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f97b2b1b-a87a-4d24-a2a6-18528ba725c4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(text(),'Iniciar Sesion')])[8]",
+      "targets": [
+        ["xpath=(//a[contains(text(),'Iniciar Sesion')])[8]", "xpath:link"],
+        ["xpath=(//div[@id='offcanvasNavbar-expand-sm']/div[2]/div/a[2])[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/login')])[8]", "xpath:href"],
+        ["xpath=//nav[8]/div/div/div[2]/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "509b71f2-154c-4b88-94d5-acfe95e050ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-8:nth-child(1)",
+      "targets": [
+        ["css=.col-lg-8:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/form/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00431282-6be0-45a3-84dd-b5486d3edacd",
+      "comment": "",
+      "command": "click",
+      "target": "id=formBasicNombre",
+      "targets": [
+        ["id=formBasicNombre", "id"],
+        ["name=email", "name"],
+        ["css=#formBasicNombre", "css:finder"],
+        ["xpath=//input[@id='formBasicNombre']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f941d24-80f3-40e9-b3f9-49dffacaa6b7",
+      "comment": "",
+      "command": "type",
+      "target": "id=formBasicNombre",
+      "targets": [
+        ["id=formBasicNombre", "id"],
+        ["name=email", "name"],
+        ["css=#formBasicNombre", "css:finder"],
+        ["xpath=//input[@id='formBasicNombre']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ferxperias@gmail.com"
+    }, {
+      "id": "eb3b92b3-fd91-44a1-a7e5-86e236e42b74",
+      "comment": "",
+      "command": "type",
+      "target": "id=formBasicPassword",
+      "targets": [
+        ["id=formBasicPassword", "id"],
+        ["name=password", "name"],
+        ["css=#formBasicPassword", "css:finder"],
+        ["xpath=//input[@id='formBasicPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "d1c9b950-97aa-4418-91f2-7a19b5c7aacb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.formularioButton",
+      "targets": [
+        ["css=.formularioButton", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ingresar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bb4d0b4-f95e-4149-a5fd-d5c47aca25bc",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,60.66666793823242)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b074229c-a055-45af-9f1f-803c9bd98b81",
+    "name": "TC38-AdministrarProducto_Admin",
+    "commands": [{
+      "id": "853cfe2e-7bab-4fa1-ae36-fe40bff07bf3",
+      "comment": "",
+      "command": "open",
+      "target": "http://vintagecar.sytes.net/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "952f7cf5-99f1-4419-bb7c-231521fff9f3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2bcaf21f-5942-40a3-8540-e9aa13f7ce7e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(text(),'Iniciar Sesion')])[8]",
+      "targets": [
+        ["xpath=(//a[contains(text(),'Iniciar Sesion')])[8]", "xpath:link"],
+        ["xpath=(//div[@id='offcanvasNavbar-expand-sm']/div[2]/div/a[2])[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/login')])[8]", "xpath:href"],
+        ["xpath=//nav[8]/div/div/div[2]/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0b64e74-4bdb-498d-a104-88bf79d95d15",
+      "comment": "",
+      "command": "click",
+      "target": "id=formBasicNombre",
+      "targets": [
+        ["id=formBasicNombre", "id"],
+        ["name=email", "name"],
+        ["css=#formBasicNombre", "css:finder"],
+        ["xpath=//input[@id='formBasicNombre']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b33503b-4726-46af-8138-1086f3f46d1e",
+      "comment": "",
+      "command": "type",
+      "target": "id=formBasicNombre",
+      "targets": [
+        ["id=formBasicNombre", "id"],
+        ["name=email", "name"],
+        ["css=#formBasicNombre", "css:finder"],
+        ["xpath=//input[@id='formBasicNombre']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "fernandopajon06@gmail.com"
+    }, {
+      "id": "ecd37e8b-474c-4737-b146-7c2b92cbbe92",
+      "comment": "",
+      "command": "type",
+      "target": "id=formBasicPassword",
+      "targets": [
+        ["id=formBasicPassword", "id"],
+        ["name=password", "name"],
+        ["css=#formBasicPassword", "css:finder"],
+        ["xpath=//input[@id='formBasicPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "789456"
+    }, {
+      "id": "8acec97c-86db-4f97-b9cd-e45f56aa91cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.formularioButton",
+      "targets": [
+        ["css=.formularioButton", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ingresar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fe9e9f6-bc32-47e0-a7ab-c897744f7fdd",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,107.33333587646484)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "51864520-82c4-4028-84bd-9f23677fa46b",
+    "name": "Cierre de sesión",
+    "commands": [{
+      "id": "ad74dea8-bb43-4f7b-8503-c07340ce9a59",
+      "comment": "",
+      "command": "open",
+      "target": "http://vintagecar.sytes.net/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e4af913-591a-4252-a017-ee3f83996ccc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2cd68a8d-546c-42df-9969-34da53e30ad4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(text(),'Iniciar Sesion')])[8]",
+      "targets": [
+        ["xpath=(//a[contains(text(),'Iniciar Sesion')])[8]", "xpath:link"],
+        ["xpath=(//div[@id='offcanvasNavbar-expand-sm']/div[2]/div/a[2])[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/login')])[8]", "xpath:href"],
+        ["xpath=//nav[8]/div/div/div[2]/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2711b5fc-b904-4182-a77f-4b79492a9ffe",
+      "comment": "",
+      "command": "click",
+      "target": "id=formBasicNombre",
+      "targets": [
+        ["id=formBasicNombre", "id"],
+        ["name=email", "name"],
+        ["css=#formBasicNombre", "css:finder"],
+        ["xpath=//input[@id='formBasicNombre']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4791f97-c684-4ac7-9a7a-eb4416034fba",
+      "comment": "",
+      "command": "type",
+      "target": "id=formBasicNombre",
+      "targets": [
+        ["id=formBasicNombre", "id"],
+        ["name=email", "name"],
+        ["css=#formBasicNombre", "css:finder"],
+        ["xpath=//input[@id='formBasicNombre']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ferxperias@gmail.com"
+    }, {
+      "id": "23fc9475-0cb8-47fd-a083-aee80e24a3ca",
+      "comment": "",
+      "command": "type",
+      "target": "id=formBasicPassword",
+      "targets": [
+        ["id=formBasicPassword", "id"],
+        ["name=password", "name"],
+        ["css=#formBasicPassword", "css:finder"],
+        ["xpath=//input[@id='formBasicPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "946d0989-894c-4b7f-9e99-7079054974fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.formularioButton",
+      "targets": [
+        ["css=.formularioButton", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ingresar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1ed1a50-f668-44eb-b0ae-d8b95a8cc90e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,107.33333587646484)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9808fb8-7703-4c35-bd73-5bf3ecb2ea06",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@id='dropdown-split-basic'])[8]",
+      "targets": [
+        ["xpath=(//button[@id='dropdown-split-basic'])[8]", "xpath:attributes"],
+        ["xpath=(//div[@id='offcanvasNavbarLabel-expand-sm']/a/div[2]/div/button)[2]", "xpath:idRelative"],
+        ["xpath=//nav[8]/div/div/div[2]/div/a/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ef9de5a-0d01-4b77-90e5-700f6db5d5a9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cerrar",
+      "targets": [
+        ["linkText=Cerrar", "linkText"],
+        ["css=.dropdown-item:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='offcanvasNavbarLabel-expand-sm']/a/div[2]/div/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/action-4')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1e28983c-30e6-453f-b0ad-3ae1bf60382c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d330b56f-6016-4c3a-a977-e16b7dc167f3"]
+  }],
+  "urls": ["http://3.144.28.205/", "http://vintagecar.sytes.net/"],
+  "plugins": []
+}

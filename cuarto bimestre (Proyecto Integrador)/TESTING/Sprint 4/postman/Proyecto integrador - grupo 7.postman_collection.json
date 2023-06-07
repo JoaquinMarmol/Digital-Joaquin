@@ -1,0 +1,1677 @@
+{
+	"info": {
+		"_postman_id": "50e3a2e8-1863-4814-a3d1-72b30942f887",
+		"name": "BIEN Proyecto integrador - grupo 7",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24571032"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Post authenticathe",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"JWT\", pm.response.json().jwt)\r",
+									"\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"fernandopajon06@gmail.com\",\r\n    \"password\":\"789456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{AUTH_URL}}",
+							"host": [
+								"{{AUTH_URL}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post authenticathe (USUARIO SIN PERMISOS)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {\r",
+									"    pm.response.to.have.status(403);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"simpson_homero_jimeno@gmail.com\",\r\n    \"password\":\"holaholahola\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{AUTH_URL}}",
+							"host": [
+								"{{AUTH_URL}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "categoria",
+			"item": [
+				{
+					"name": "Get categorias",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/categorias",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"categorias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post categorias",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"titulo\":\"Camionetas\",\r\n            \"descripcion\":\"1.206  Autos\",\r\n            \"url_imagen\":\"https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80\"\r\n        \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/categorias",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"categorias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put categorias",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 35,\r\n    \"titulo\": \"Avión\",\r\n    \"descripcion\": \"1.206  Autos\",\r\n    \"url_imagen\": \"https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/categorias",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"categorias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Del categorias",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/categorias/35",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"categorias",
+								"35"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post categorias (NO ADMIN)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {\r",
+									"    pm.response.to.have.status(403);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"titulo\":\"Camionetas\",\r\n            \"descripcion\":\"1.206  Autos\",\r\n            \"url_imagen\":\"https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80\"\r\n        \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/categorias",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"categorias"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "producto",
+			"item": [
+				{
+					"name": "Get productos",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/producto",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"producto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get produco por ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/producto/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"producto",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post productos",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"titulo\": \"Lincoln Continental 1961\",\r\n        \"descripcion\": \"El Lincoln Continental es un automóvil de lujo producido por la firma estadounidense Lincoln – una compañía de Ford Motor Company – entre los años 1939 y 2002.\",\r\n        \"img_principal\": null,\r\n        \"latitud\": -13.1225,\r\n        \"longitud\": -23.1225,\r\n        \"categoria\": {\r\n            \"id\": 2\r\n        },\r\n        \"ciudad\": {\r\n            \"id\": 2\r\n        },\r\n        \"imagenes\": [\r\n            {\r\n                \"titulo\": \"lincoln continental1961\",\r\n                \"url\": \"https://imagenesvintagecar.s3.us-east-2.amazonaws.com/imagenes+para+aws/Lincoln+Continental+1961(ok)/1961-Lincoln-Continental-Convertible-Triple-Black-15.jpg\"\r\n            },\r\n            {\r\n                \"titulo\": \"lincoln continental1961\",\r\n                \"url\": \"https://imagenesvintagecar.s3.us-east-2.amazonaws.com/imagenes+para+aws/Lincoln+Continental+1961(ok)/1961-Lincoln-Continental-Convertible-Triple-Black-04.jpg\"\r\n            },\r\n            {\r\n                \"titulo\": \"lincoln continental1961\",\r\n                \"url\": \"https://imagenesvintagecar.s3.us-east-2.amazonaws.com/imagenes+para+aws/Lincoln+Continental+1961(ok)/1961-Lincoln-Continental-Convertible-Triple-Black-24.jpg\"\r\n            },\r\n            {\r\n                \"titulo\": \"lincoln continental1961\",\r\n                \"url\": \"https://imagenesvintagecar.s3.us-east-2.amazonaws.com/imagenes+para+aws/Lincoln+Continental+1961(ok)/1961-Lincoln-Continental-Convertible-Triple-Black-23.jpg\"\r\n            },\r\n            {\r\n                \"titulo\": \"lincoln continental1961\",\r\n                \"url\": \"https://imagenesvintagecar.s3.us-east-2.amazonaws.com/imagenes+para+aws/Lincoln+Continental+1961(ok)/Custom-1961-Lincoln-Continental-scaled.jpg\"\r\n            }\r\n        ],\r\n        \"caracteristicas\": [\r\n            {\r\n                \"id\": 9\r\n            },\r\n            {\r\n                \"id\": 10\r\n            },\r\n            {\r\n                \"id\": 5\r\n            },\r\n            {\r\n                \"id\": 8\r\n            },\r\n            {\r\n                \"id\": 11\r\n            },\r\n            {\r\n                \"id\": 18\r\n            },\r\n            {\r\n                \"id\": 3\r\n            },\r\n            {\r\n                \"id\": 15\r\n            }\r\n        ],\r\n        \"politica\": {\r\n            \"norma\": \"Documentación necesaria:  D.N.I., o Pasp, Licencia de Conducir vigente  y Tarjeta de Crédito para garantizar el pago. Se deberá devolver con la misma cantidad de nafta. Se deberá devolver con la misma cantidad de nafta.\",\r\n            \"seguridad\": \"Este vehiculo dispone de matafuego. En caso de accidente, robo, hurto o incendio del automotor locado, notificar fehacientemente lo ocurrido. No se permitir la utilización del vehículo por otro conductor. \",\r\n            \"cancelacion\": \"Tolerancia de la reserva es de 1 hora, pasado ese tiempo se cancela la reserva. Se puede cancelar 1 dia antes de la fecha reservada.\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/producto",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"producto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put producto",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\":25,\r\n        \"titulo\": \"Hola Continental 1961\",\r\n        \"descripcion\": \"El Lincoln Continental es un automóvil de lujo producido por la firma estadounidense Lincoln – una compañía de Ford Motor Company – entre los años 1939 y 2002.\",\r\n        \"img_principal\": null,\r\n        \"latitud\": -13.1225,\r\n        \"longitud\": -23.1225,\r\n        \"categoria\": {\r\n            \"id\": 2\r\n        },\r\n        \"ciudad\": {\r\n            \"id\": 2\r\n        },\r\n        \"imagenes\": [\r\n            {\r\n                \"titulo\": \"lincoln continental1961\",\r\n                \"url\": \"https://imagenesvintagecar.s3.us-east-2.amazonaws.com/imagenes+para+aws/Lincoln+Continental+1961(ok)/1961-Lincoln-Continental-Convertible-Triple-Black-15.jpg\"\r\n            },\r\n            {\r\n                \"titulo\": \"lincoln continental1961\",\r\n                \"url\": \"https://imagenesvintagecar.s3.us-east-2.amazonaws.com/imagenes+para+aws/Lincoln+Continental+1961(ok)/1961-Lincoln-Continental-Convertible-Triple-Black-04.jpg\"\r\n            },\r\n            {\r\n                \"titulo\": \"lincoln continental1961\",\r\n                \"url\": \"https://imagenesvintagecar.s3.us-east-2.amazonaws.com/imagenes+para+aws/Lincoln+Continental+1961(ok)/1961-Lincoln-Continental-Convertible-Triple-Black-24.jpg\"\r\n            },\r\n            {\r\n                \"titulo\": \"lincoln continental1961\",\r\n                \"url\": \"https://imagenesvintagecar.s3.us-east-2.amazonaws.com/imagenes+para+aws/Lincoln+Continental+1961(ok)/1961-Lincoln-Continental-Convertible-Triple-Black-23.jpg\"\r\n            },\r\n            {\r\n                \"titulo\": \"lincoln continental1961\",\r\n                \"url\": \"https://imagenesvintagecar.s3.us-east-2.amazonaws.com/imagenes+para+aws/Lincoln+Continental+1961(ok)/Custom-1961-Lincoln-Continental-scaled.jpg\"\r\n            }\r\n        ],\r\n        \"caracteristicas\": [\r\n            {\r\n                \"id\": 9\r\n            },\r\n            {\r\n                \"id\": 10\r\n            },\r\n            {\r\n                \"id\": 5\r\n            },\r\n            {\r\n                \"id\": 8\r\n            },\r\n            {\r\n                \"id\": 11\r\n            },\r\n            {\r\n                \"id\": 18\r\n            },\r\n            {\r\n                \"id\": 3\r\n            },\r\n            {\r\n                \"id\": 15\r\n            }\r\n        ],\r\n        \"politica\": {\r\n            \"norma\": \"Documentación necesaria:  D.N.I., o Pasp, Licencia de Conducir vigente  y Tarjeta de Crédito para garantizar el pago. Se deberá devolver con la misma cantidad de nafta. Se deberá devolver con la misma cantidad de nafta.\",\r\n            \"seguridad\": \"Este vehiculo dispone de matafuego. En caso de accidente, robo, hurto o incendio del automotor locado, notificar fehacientemente lo ocurrido. No se permitir la utilización del vehículo por otro conductor. \",\r\n            \"cancelacion\": \"Tolerancia de la reserva es de 1 hora, pasado ese tiempo se cancela la reserva. Se puede cancelar 1 dia antes de la fecha reservada.\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/producto",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"producto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Del producto",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/producto/43",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"producto",
+								"43"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post producto (NO ADMIN)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {\r",
+									"    pm.response.to.have.status(403);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/producto",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"producto"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "reservas",
+			"item": [
+				{
+					"name": "Filtros",
+					"item": [
+						{
+							"name": "Get reservas por usuario",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/reserva/usuario_id/32",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"reserva",
+										"usuario_id",
+										"32"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get reservas por filtrada por producto",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/reserva/producto_id/2",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"reserva",
+										"producto_id",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get produto filtrado por fecha de inicio y fin reserva.",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/producto/fechainicio/2022-12-01/fechafin/2022-12-04",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"producto",
+										"fechainicio",
+										"2022-12-01",
+										"fechafin",
+										"2022-12-04"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get producto filtrado por ubicación e intervalo de fechas",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/producto/id_ciudad/CORDOBA/fechainicio/2021-01-01/fechafin/2023-12-04",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"producto",
+										"id_ciudad",
+										"CORDOBA",
+										"fechainicio",
+										"2021-01-01",
+										"fechafin",
+										"2023-12-04"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get producto filtrado por categoria",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/producto/id_categoria/1",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"producto",
+										"id_categoria",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Get reservas",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/reserva",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"reserva"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get reserva por ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/reserva/2",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"reserva",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post reservas",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"horaRetiro\":\"00:10:12\",\r\n    \"inicioReserva\":\"2022-03-10\",\r\n    \"finReserva\":\"2022-03-15\",\r\n    \"producto\":{\"id\":7},\r\n    \"usuario\":{\"id\":27}\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/reserva",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"reserva"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put reservas",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 49,\r\n    \"horaRetiro\":\"00:10:15\",\r\n    \"inicioReserva\":\"2022-08-26\",\r\n    \"finReserva\":\"2022-05-28\",\r\n    \"producto\":{\"id\":8},\r\n    \"usuario\":{\"id\":32}\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/reserva",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"reserva"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Reserva",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/reserva/52",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"reserva",
+								"52"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post reserva (NO ADMIN)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {\r",
+									"    pm.response.to.have.status(403);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"horaRetiro\":\"00:10:12\",\r\n    \"inicioReserva\":\"2022-03-10\",\r\n    \"finReserva\":\"2022-03-15\",\r\n    \"producto\":{\"id\":7},\r\n    \"usuario\":{\"id\":27}\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/reserva",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"reserva"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "usuarios",
+			"item": [
+				{
+					"name": "Get usuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/usuario",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get usuarios por ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/usuario/32",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"usuario",
+								"32"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post usuario",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"nombre\": \"Homero\",\r\n    \"apellido\": \"Simpson Del Lago Del Terror\",\r\n    \"email\": \"fernandopajon08@gmail.com\",\r\n    \"password\": \"$2a$10$izsmqq1Iqf026lNxNTiJ1.iARUIcqSpbVz3ieXpBu4YQz6HCnh8re\",\r\n    \"rol\": {\r\n        \"id\": 2,\r\n        \"nombre\": \"ROLE_USER\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/usuario",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Del usuario",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/usuario/59",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"usuario",
+								"59"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "imagenes",
+			"item": [
+				{
+					"name": "Get imagenes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/imagen",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"imagen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post imagen",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"titulo\": \"cadilac1952\",\r\n        \"url\": \"https://imagenesvintagecar.s3.us-east-2.amazonaws.com/imagenes+para+aws/Cadillac+Eldorado+1952(ok)/230_p15_l.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/imagen",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"imagen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put imagen",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 180,\r\n    \"titulo\": \"Blablabla\",\r\n    \"url\": \"https://imagenesvintagecar.s3.us-east-2.amazonaws.com/imagenes+para+aws/Cadillac+Eldorado+1952(ok)/230_p15_l.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/imagen",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"imagen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Del imagen",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/imagen/180",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"imagen",
+								"180"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "politica",
+			"item": [
+				{
+					"name": "Get politica",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/politica",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"politica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post politica",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"norma\": \"Documentación necesaria:  D.N.I., o Pasp, Licencia de Conducir vigente  y Tarjeta de Crédito para garantizar el pago. Se deberá devolver con la misma cantidad de nafta. Se deberá devolver con la misma cantidad de nafta.\",\r\n        \"seguridad\": \"Este vehiculo dispone de matafuego. En caso de accidente, robo, hurto o incendio del automotor locado, notificar fehacientemente lo ocurrido. No se permitir la utilización del vehículo por otro conductor. \",\r\n        \"cancelacion\": \"Tolerancia de la reserva es de 1 hora, pasado ese tiempo se cancela la reserva. Se puede cancelar 1 dia antes de la fecha reservada.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/politica",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"politica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put politica",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 31,\r\n    \"norma\": \"Documentación necesaria:  D.N.I., o Pasp, Licencia de Conducir vigente  y Tarjeta de Crédito para garantizar el pago. Se deberá devolver con la misma cantidad de nafta. Se deberá devolver con la misma cantidad de nafta.\",\r\n    \"seguridad\": \"Este vehiculo dispone de matafuego. En caso de accidente, robo, hurto o incendio del automotor locado, notificar fehacientemente lo ocurrido. No se permitir la utilización del vehículo por otro conductor. \",\r\n    \"cancelacion\": \"Tolerancia de la reserva es de 1 hora, pasado ese tiempo se cancela la reserva. Se puede cancelar 1 dia antes de la fecha reservada.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/politica",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"politica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Del politica",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/politica/46",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"politica",
+								"46"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "características",
+			"item": [
+				{
+					"name": "Get caracteristicas",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/caracteristica",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"caracteristica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post caracteristicas",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n       \r\n        \"nombre\": \"230 km/h\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/caracteristica",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"caracteristica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put caracteristicas",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 20,\r\n    \"nombre\": \"240 km/h\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/caracteristica",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"caracteristica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Del características",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{JWT}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/caracteristica/37",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"caracteristica",
+								"37"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,142 @@
+{
+	"id": "659f208a-7ab0-4bb4-9103-df872ad0ccbb",
+	"name": "Proyecto integrador - grupo 7",
+	"timestamp": "2022-12-07T23:38:36.846Z",
+	"collection_id": "24571032-50e3a2e8-1863-4814-a3d1-72b30942f887",
+	"folder_id": "24571032-b6c20822-3ddd-4994-b35d-99e20dbd6544",
+	"environment_id": "24571032-9b6062f2-191f-4f0a-912b-596b7ee2adf6",
+	"totalPass": 4,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "77d675c7-21cf-4f0c-b1d7-d1bcb1f94c2c",
+			"name": "Get politica",
+			"url": "http://3.14.246.73:8080/vintage/politica",
+			"time": 546,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				546
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "3d094f65-19cc-4554-987b-2897ae8468e2",
+			"name": "Post politica",
+			"url": "http://3.14.246.73:8080/vintage/politica",
+			"time": 199,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				199
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "294a193c-42f8-47f2-a599-daa57c937153",
+			"name": "Put politica",
+			"url": "http://3.14.246.73:8080/vintage/politica",
+			"time": 208,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				208
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "f7b0f0d3-2a3f-44f8-8d00-ddf099a1dd2f",
+			"name": "Del politica",
+			"url": "http://3.14.246.73:8080/vintage/politica/46",
+			"time": 205,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				205
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1158,
+	"collection": {
+		"requests": [
+			{
+				"id": "77d675c7-21cf-4f0c-b1d7-d1bcb1f94c2c",
+				"method": "GET"
+			},
+			{
+				"id": "3d094f65-19cc-4554-987b-2897ae8468e2",
+				"method": "POST"
+			},
+			{
+				"id": "294a193c-42f8-47f2-a599-daa57c937153",
+				"method": "PUT"
+			},
+			{
+				"id": "f7b0f0d3-2a3f-44f8-8d00-ddf099a1dd2f",
+				"method": "DELETE"
+			}
+		]
+	}
+}
